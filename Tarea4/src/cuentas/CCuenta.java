@@ -1,6 +1,12 @@
 package cuentas;
+/**
+ * Clase CCuenta
+ * 
+ * Contiene la información de las cuentas
+ * @author JoelSzw
+ * @version 2.0
+ */
 public class CCuenta {
-
 
     private String nombre;
     private String cuenta;
@@ -9,15 +15,19 @@ public class CCuenta {
 
     public CCuenta()
     {
+    	
     }
-
+    
+   
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
+    	
         setNombre(nom);
         setCuenta(cue);
         setSaldo(sal);
     }
 
+    
     public double estado()
     {
         return getSaldo();
@@ -39,6 +49,10 @@ public class CCuenta {
         setSaldo(getSaldo() - cantidad);
     }
 
+    /**
+     * Devuelve el nombre
+     * @return nombre
+     */
 	private String getNombre() {
 		return nombre;
 	}
